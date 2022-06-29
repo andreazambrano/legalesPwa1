@@ -1,0 +1,73 @@
+<div class="wrapper">
+
+    <!--== Start Header Wrapper ==-->
+        <app-header></app-header>
+        <router-outlet></router-outlet>
+        <app-footer></app-footer>
+
+
+    <!--== Start Footer Area Wrapper ==-->
+
+    <div class="xs-sidebar-group info-group" >
+        <div class="xs-overlay xs-bg-black"></div>
+        <div class="xs-sidebar-widget">
+            <div class="sidebar-widget-container">
+                <div class="widget-heading">
+                    <a  class="close-side-widget">
+                        X
+                    </a>
+                </div>
+                <div class="sidebar-textwidget">
+                    
+                    <!-- Sidebar Info Content -->
+                    <div class="sidebar-info-contents">
+                        <div class="content-inner">
+                            <div class="logo">
+                                <a><img src="assets/assetsL/images/logo-3.png" alt="" /></a>
+                            </div>
+                            <div class="content-box">
+                                <h2>Sobre nosotros</h2>
+                                <p class="text">Legales, firma de abogados. <br> Nuestro equipo de abogados altamente capacitados lo acompañará en cada etapa y se ocupará de cualquier problema que pueda surgir en el camino.</p>
+                                <a [routerLink]="['contact']" class="theme-btn btn-style-two"><span class="txt">Para consultas</span></a>
+                            </div>
+                            <div class="contact-info">
+                                <h2>Contáctanos</h2>
+                                <ul class="list-style-two">
+                                    <li><span class="icon fa fa-location-arrow"></span>Medellín - El Poblado</li>
+                                    <li><span class="icon fa fa-phone"></span>(+57) 30 2623 1220</li>
+                                    <li><span class="icon fa fa-envelope"></span>hello@legales.com.co</li>
+                                    <li><span class="icon fa fa-clock-o"></span>Lunes a Vierne: 09.00 a 18.00 Domingos: Cerrado</li>
+                                </ul>
+                            </div>
+                            <!-- Social Box -->
+                            <ul class="social-box">
+                                <li class="facebook"><a href="https://www.facebook.com/legales.com.co" class="fa fa-facebook-f" target="_blank"></a></li>
+                                <li><a href="https://instagram.com/legales.com.co?r=nametag" class="fa fa-instagram" target="_blank"></a></li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-angle-up"></span>
+    </div>
+
+    <a href="https://api.whatsapp.com/send?phone=573026231220&text=Hola%21%20Quisiera%20m%C3%A1s%20contactar%20con%20un%20abogado%20." class="float" target="_blank">
+    <i class="fa fa-whatsapp my-float"></i>
+    </a>
+
+</div>
+        
+
+
+
+
+
+
+
+
+        
