@@ -21,14 +21,8 @@ export class HeaderComponent implements AfterViewInit {
     
     console.log('Loading External Scripts');
     this.script.load(  
-      // 'modernizr', 
-      // 'jquery', 
-      'jquery-migrate', 
-      'bootstrap.bundle', 
-      'swiper-bundle', 
-      'fancybox', 
-      'jquery.nice-select', 
-      'main'
+      'jquery', 
+      'bootstrap'
     ).then(data => {console.log('script loaded ', data);}).catch(error => console.log(error));
      
    }
