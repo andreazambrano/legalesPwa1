@@ -2,7 +2,7 @@ import { Component,OnInit } from '@angular/core';
 import { BikersService } from './services';
 import { Butler } from './services/butler.service';
 import { ScriptService } from './services/script.service';
-//declare var $: any;
+declare var $: any;
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',

@@ -12,7 +12,8 @@ import { NgxUsefulSwiperModule } from 'ngx-useful-swiper';
   imports: [
     CommonModule,
     RouterModule,
-    NgxUsefulSwiperModule
+    NgxUsefulSwiperModule,
+    
   ],
   exports: [HeaderComponent],
 })

@@ -11,6 +11,10 @@ import { FilterModule } from '@shared/components/filter/filter.module';
 import { NotificationsModule } from './components/pages/notifications/notifications.module';
 import { RouterModule } from '@angular/router';
 import { NgxUsefulSwiperModule } from 'ngx-useful-swiper';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CarouselModule } from 'ngx-owl-carousel-o';
+
+
 // SERVICES
 import { Butler } from './services/butler.service';
 import { HomeSelectorModule } from './shared/components/home-selector/home-selector.module';
@@ -37,6 +41,9 @@ import { GraphQLModule } from './graphql.module';
     FooterModule, 
     FontAwesomeModule,
     HttpClientModule,
+    BrowserModule,
+    BrowserAnimationsModule,
+    CarouselModule,
     ServiceWorkerModule.register('ngsw-worker.js', {
       enabled: environment.production,
       // Register the ServiceWorker as soon as the app is stable

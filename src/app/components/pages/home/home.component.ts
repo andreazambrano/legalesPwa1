@@ -7,8 +7,8 @@ import { BikersService } from '@app/services/';
 import {Map, Popup,Marker} from 'mapbox-gl';
 import { MapService } from '@app/services/map.service';
 import { Feature } from '@app/interfaces/places';
-
-
+// import { CarouselModule } from 'ngx-owl-carousel-o';
+import { OwlOptions } from 'ngx-owl-carousel-o';
 declare var $: any;
 @Component({
   selector: 'app-home',
@@ -27,7 +27,11 @@ link:string="";
     public script:ScriptService,
     private mapService:MapService,
     public _butler: Butler
-  ) { } 
+  ) { 
+
+   
+
+  } 
 
   config: SwiperOptions = {
 

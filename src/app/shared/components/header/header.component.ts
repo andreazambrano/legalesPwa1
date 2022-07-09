@@ -5,6 +5,7 @@ import { ScriptService } from '@app/services/script.service';
 import { ScriptStore } from '@app/services/script.store';
 import { SwiperOptions } from 'swiper';
 import { BikersService } from '@app/services';
+import { CarouselModule } from 'ngx-owl-carousel-o';
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
@@ -21,8 +22,19 @@ export class HeaderComponent implements AfterViewInit {
     
     console.log('Loading External Scripts');
     this.script.load(  
-      'jquery', 
-      'bootstrap'
+      'modernizr', 
+      'jquery.mCustomScrollbar',
+      'jquery.fancybox',
+      'appear',
+      'nav',
+      'mixitup',
+      'wow',
+      'knob',
+      'isotope',
+      'jquery.ui',
+      'script',
+      'color'
+
     ).then(data => {console.log('script loaded ', data);}).catch(error => console.log(error));
      
    }
